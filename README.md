@@ -1,6 +1,6 @@
 # abcjs: `lineBreaks` is typed as a flat list, but the parser reads one list per section
 
-Minimal reproduction for the `lineBreaks` option's TypeScript type. `AbcVisualParams.lineBreaks` is declared as `Array<number>`, but the parser reads it as an array with one list of measure numbers per section of the tune. A flat list type-checks and is silently ignored; the nested list that works doesn't type-check. Related: #1139, where the nested shape was worked out for the runtime.
+Minimal reproduction for the `lineBreaks` option's TypeScript type. `AbcVisualParams.lineBreaks` is declared as `Array<number>`, but the parser reads it as an array with one list of measure numbers per section of the tune. A flat list type-checks and is silently ignored; the nested list that works doesn't type-check. Reported in https://github.com/paulrosen/abcjs/issues/1196. Related: #1139, where the nested shape was worked out for the runtime.
 
 ## Reproduction
 
