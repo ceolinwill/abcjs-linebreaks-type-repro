@@ -1,0 +1,14 @@
+{
+  "name": "abcjs-linebreaks-type-repro",
+  "version": "1.0.0",
+  "description": "abcjs: lineBreaks is typed as a flat list, but the parser reads one list per section",
+  "scripts": {
+    "repro": "node repro.mjs && tsc"
+  },
+  "type": "module",
+  "dependencies": {
+    "abcjs": "6.7.2",
+    "typescript": "7.0.2"
+  },
+  "private": true
+}
